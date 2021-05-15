@@ -1,0 +1,248 @@
+<head>
+    <%- include('portal/partials/head.ejs') %>
+
+</head>
+
+<style>
+
+.page {
+    display: flex;
+    flex-direction: column;
+    /* min-height: 100vh; */
+    border-radius: 10px;
+    margin-top: 9%;
+}
+.card {
+    border-radius: 11px;
+}
+.card {
+    position: relative;
+    display: flex;
+    flex-direction: column;
+    min-width: 0;
+    word-wrap: break-word;
+    background-color: #fff;
+    background-clip: border-box;
+    border: 1px solid #e8e8f7;
+    border-radius: 3px;
+}
+
+.construction, .signpages .details {
+    border-top-left-radius: 6px;
+    border-bottom-left-radius: 6px;
+    background: url(assets/images/bg.png);
+    position: relative;
+    background-size: cover;
+    background-position: 50%;
+}
+.row-sm>div {
+    padding-left: 10px;
+    padding-right: 10px;
+}
+.bg-primary, .bg-primary:focus, .bg-primary:hover {
+    background-color: #6259ca!important;
+}
+
+.signpages .details:before {
+    background: rgb(91 115 232 / 75%);
+    z-index: 0;
+}
+.signpages .details:before {
+    background: rgb(91 115 232 / 75%);
+}
+.signpages .details:before {
+    background: rgb(91 115 232 / 75%);
+    z-index: 0;
+}
+.construction:before, .signpages .details:before {
+    content: "";
+    height: 100%;
+    width: 100%;
+    position: absolute;
+    left: 0;
+}
+
+.pos-absolute {
+    position: absolute;
+}
+.pt-4, .py-4 {
+    padding-top: 1.5rem!important;
+}
+.p-2 {
+    padding: .5rem!important;
+}
+.mt-5, .my-5 {
+    margin-top: 3rem!important;
+}
+.pt-4, .py-4 {
+    padding-top: 1.5rem!important;
+}
+.header-brand-img {
+    line-height: 2.5rem;
+    vertical-align: middle;
+    width: auto;
+}
+.text-white {
+    color: #fff!important;
+}
+.tx-13 {
+    font-size: 13px;
+}
+.tx-white-6 {
+    color: hsla(0,0%,100%,.6);
+}
+
+.signpages .login_form {
+    background-color: #fff;
+    border-top-right-radius: 6px;
+    border-bottom-right-radius: 6px;
+}
+.row-sm>div {
+    padding-left: 10px;
+    padding-right: 10px;
+}
+
+.container, .container-fluid {
+    width: 100%;
+    padding-right: 15px;
+    padding-left: 15px;
+    margin-right: auto;
+    margin-left: auto;
+}
+
+.row-sm {
+    margin-left: -10px;
+    margin-right: -10px;
+}
+
+.form-group label {
+    text-align: left !important;
+}
+
+
+
+.btn-main-primary {
+    color: #fff !important;
+    background-color: #5b73e8 !important;
+    border-color: #5b73e8 !important;
+}
+.btn-main-primary:hover {
+    color: #fff !important;
+    background-color: #403fad !important;
+    border-color: #403fad !important;
+}
+.text-left {
+    text-align: left;
+}
+
+.btn-block {
+    display: block;
+    width: 100%;
+}
+.btn, .sp-container button {
+    display: inline-block;
+    font-weight: 400;
+    color: #8f9cc0;
+    text-align: center;
+    vertical-align: middle;
+    -webkit-user-select: none;
+    -moz-user-select: none;
+    -ms-user-select: none;
+    user-select: none;
+    background-color: transparent;
+    border: 1px solid transparent;
+    padding: .375rem .75rem;
+    font-size: .875rem;
+    line-height: 1.5;
+    border-radius: 3px;
+    transition: color .15s ease-in-out,background-color .15s ease-in-out,border-color .15s ease-in-out,box-shadow .15s ease-in-out;
+}
+
+.form-group.text-left {
+    text-align: left;
+    margin-bottom: 15px;
+}
+
+@media screen and (max-width: 640px){
+    .signpages {
+    width: 90%;
+}
+}
+
+@media (max-width: 990px){
+    .signpages {
+    width: 60%;
+    border-radius: 6px;
+    margin: 5em auto;
+    display: flex;
+}
+}
+
+
+
+    @media (min-width: 1300px){
+        .signpages {
+    width: 50%;
+    border-radius: 6px;
+    margin: 5em auto;
+    display: flex;
+}
+    }
+
+
+</style>
+<body>
+
+    <div class="page main-signin-wrapper">
+
+        <!-- Row -->
+        <div class="row signpages text-center">
+            <div class="col-md-12">
+                <div class="card">
+                    <div class="row row-sm">
+                        <div class="col-lg-6 col-xl-5 d-none d-lg-block text-center bg-primary details">
+                            <div class="mt-5 pt-4 p-2 pos-absolute">
+                                <img src="assets/images/logo.png" class="header-brand-img mb-4" alt="logo">
+                                <div class="clearfix"></div>
+                                <img src="assets/images/lg-user.png" style="width: 150px;" class="img-fluid d-block mx-auto mb-0" alt="user">
+                                <h5 class="mt-4 text-white">Create Your Account</h5>
+                                <span class="tx-white-6 tx-13 mb-5 mt-xl-0">Signup to create, discover and connect with the global community</span>
+                            </div>
+                        </div>
+                        <div class="col-lg-6 col-xl-7 col-xs-12 col-sm-12 login_form ">
+                            <div class="container-fluid">
+                                <div class="row row-sm">
+                                    <div class="card-body mt-2 mb-2">
+                                        
+                                        <div class="clearfix"></div>
+                                        <form>
+                                            <h5 class="text-left mb-2">Signin to Your Account</h5>
+                                            <p class="mb-4 text-muted tx-13 ml-0 text-left">Signin to create, discover and connect with the global community</p>
+                                            <div class="form-group text-left">
+                                                <label>Email</label>
+                                                <input class="form-control" placeholder="Enter your email" type="text">
+                                            </div>
+                                            <div class="form-group text-left">
+                                                <label>Password</label>
+                                                <input class="form-control" placeholder="Enter your password" type="password">
+                                            </div>
+                                            <button class="btn ripple btn-main-primary btn-block">Sign In</button>
+                                        </form>
+                                        <div class="text-left mt-5 ml-0">
+                                            <div class="mb-1"><a href="">Forgot password?</a></div>
+                                            <div>Don't have an account? <a href="dashboard">Register Here</a></div>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+        <!-- End Row -->
+    
+    </div>
+
+    <%- include('portal/partials/scripts') %> 
+</body>
